@@ -31,7 +31,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
                 s.classList.remove("sticky");
             }
         }
-        scrollDomain.style.visibility = 'visible'
+        if (window.innerWidth > 800) {
+            scrollDomain.style.visibility = 'visible'
+        }
         if (document.documentElement.scrollTop == 0) {
             scrollDomain.style.visibility = 'hidden'
         }
