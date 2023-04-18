@@ -8,13 +8,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }, { threshold: [0] });
     if (vid != null) {
         observer.observe(vid);
+        vid.style.width = `${window.innerWidth - 100}px`
     }
     if (img != null) {
         observer.observe(img);
+        img.style.width = `${window.innerWidth - 100}px`
     }
     document.body.scrollTop = document.documentElement.scrollTop = 0;
-    img.style.width = `${window.innerWidth - 100}px`
-    vid.style.width = `${window.innerWidth - 100}px`
     scrolls = document.querySelectorAll('.scroll')
     scrollDomain = document.querySelector('#scrollDomain')
     navBar = document.querySelector('#nav')
@@ -43,7 +43,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
         }
     })
     window.addEventListener('resize', () => {
-        img.style.width = `${window.innerWidth - 100}px`
-        vid.style.width = `${window.innerWidth - 100}px`
+        if (img != null) {
+            img.style.width = `${window.innerWidth - 100}px`
+        }
+        if (vid != null) {
+            vid.style.width = `${window.innerWidth - 100}px`
+        }
     })
 })
