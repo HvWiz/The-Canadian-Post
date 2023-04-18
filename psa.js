@@ -6,8 +6,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
             element = entries[0].target
             element.classList.add('fade')
     }, { threshold: [0] });
-    observer.observe(vid);
-    observer.observe(img);
+    if (vid != null) {
+        observer.observe(vid);
+    }
+    if (img != null) {
+        observer.observe(img);
+    }
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     img.style.width = `${window.innerWidth - 100}px`
     vid.style.width = `${window.innerWidth - 100}px`
