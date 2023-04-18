@@ -12,6 +12,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     img.style.width = `${window.innerWidth - 100}px`
     vid.style.width = `${window.innerWidth - 100}px`
     scrolls = document.querySelectorAll('.scroll')
+    scrolls1 = document.querySelectorAll('.scroll1')
     scrollDomain = document.querySelector('#scrollDomain')
     navBar = document.querySelector('#nav')
     sticky = nav.offsetTop;
@@ -22,12 +23,20 @@ window.addEventListener("DOMContentLoaded", (event) => {
         scroller.style.width = `${scrollPercent}%`
         scrolls[1].style.top = `${navBar.offsetHeight}px`
         scrolls[2].style.top = `${navBar.offsetHeight}px`
+        scrolls1[1].style.top = `${navBar.offsetHeight}px`
+        scrolls1[2].style.top = `${navBar.offsetHeight}px`
         if (window.pageYOffset > sticky) {
             for (s of scrolls) {
                 s.classList.add("sticky");
             }
+            for (s of scrolls1) {
+                s.classList.add("sticky");
+            }
           } else {
             for (s of scrolls) {
+                s.classList.remove("sticky");
+            }
+            for (s of scrolls1) {
                 s.classList.remove("sticky");
             }
         }
