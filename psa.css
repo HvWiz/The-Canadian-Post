@@ -62,6 +62,9 @@ h3 {
     animation: fadeIn 2s alternate;
 }
 
+body {
+    overflow-x: hidden; 
+}
 .article {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
