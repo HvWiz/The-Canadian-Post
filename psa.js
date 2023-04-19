@@ -16,11 +16,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
     b = document.createElement('h2')
     document.body.appendChild(b);
-    b.innerText = 'Scroll to top'
+    b.innerText = 'Scroll to Top'
     b.addEventListener('click', function(){
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
     })
+    b.classList.add('scrollup')
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     scrolls = document.querySelectorAll('.scroll')
     scrollDomain = document.querySelector('#scrollDomain')
