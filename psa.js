@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     b.addEventListener('click', function(){
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
-    }
+    })
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     scrolls = document.querySelectorAll('.scroll')
     scrollDomain = document.querySelector('#scrollDomain')
