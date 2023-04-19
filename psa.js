@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         observer.observe(img);
         img.style.width = `${window.innerWidth - 100}px`
     }
-    b = document.createElement('button')
+    b = document.createElement('h2')
     document.body.appendChild(b);
     b.innerText = 'Scroll to top'
     b.addEventListener('click', function(){
