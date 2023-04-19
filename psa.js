@@ -14,6 +14,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
         observer.observe(img);
         img.style.width = `${window.innerWidth - 100}px`
     }
+    b = document.createElement('button')
+    document.body.appendChild(b);
+    b.innerText = 'Scroll to top'
+    b.addEventListener('click', function(){
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
+    }
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     scrolls = document.querySelectorAll('.scroll')
     scrollDomain = document.querySelector('#scrollDomain')
