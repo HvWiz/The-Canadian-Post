@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
     b = document.createElement('h2')
     document.body.appendChild(b);
-    b.innerText = 'Scroll to Top'
+    b.innerText = 'Scroll to Top ↟'
     b.addEventListener('mousedown', function(){
         b.style.borderStyle = 'inset'
     })
