@@ -14,8 +14,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
         observer.observe(img);
         img.style.width = `${window.innerWidth - 100}px`
     }
+    div = document.createElement('div')
+    div.style.position = 'fixed'
+    document.body.appendChild(div)
     b = document.createElement('h2')
-    document.body.appendChild(b);
+    div.appendChild(b)
     b.innerText = 'Scroll to Top ↟'
     b.addEventListener('mousedown', function(){
         b.style.borderStyle = 'inset'
