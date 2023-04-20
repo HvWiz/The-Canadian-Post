@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     b.addEventListener('mousedown', function(){
         b.style.borderStyle = 'inset'
     })
-    b.addEventListener('mouseup' function() {
+    b.addEventListener('mouseup', function() {
         b.style.borderStyle = 'outset'
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
