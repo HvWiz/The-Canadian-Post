@@ -14,9 +14,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
         observer.observe(img);
         img.style.width = `${window.innerWidth - 100}px`
     }
-    b = document.createElement('h2')
+    b = document.createElement('img')
     document.body.appendChild(b)
-    b.innerText = 'Scroll to Top ↟'
+    b.src = 'arrow.png'
     b.addEventListener('mousedown', function(){
         b.style.borderStyle = 'inset'
     })
