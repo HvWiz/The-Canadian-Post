@@ -22,7 +22,7 @@
     width: 50px;
     position: relative;
     left: 93%;
-    box-shadow: 10px 5px 5px grey;
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 #scrollDomain {
