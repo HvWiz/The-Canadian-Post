@@ -17,11 +17,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     b = document.createElement('img')
     document.body.appendChild(b)
     b.src = 'arrow.png'
-    b.addEventListener('mousedown', function(){
-        b.style.borderStyle = 'inset'
-    })
-    b.addEventListener('mouseup', function() {
-        b.style.borderStyle = 'outset'
+    b.addEventListener('click', function() {
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
     })
