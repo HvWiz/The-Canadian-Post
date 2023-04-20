@@ -18,6 +18,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.body.appendChild(b);
     b.innerText = 'Scroll to Top'
     b.addEventListener('click', function(){
+        b.style.borderStyle = 'inset'
+        setTimeout(() => {b.style.borderStyle = 'outset'}, 100)
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
     })
