@@ -13,14 +13,17 @@
 }
 
 .scrollup {
-    text-align: right;
+    text-align: center;
     color: #C40C0C;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-style: solid;
     border-width: 10px;
     border-style: outset;
     border-color: black;
-    background-color: grey;
+    width: 230px;
+    background-color: lightgrey;
+    position: relative;
+    left: 80%;
 }
 
 #scrollDomain {
