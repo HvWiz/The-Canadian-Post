@@ -14,11 +14,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
         observer.observe(img);
         img.style.width = `${window.innerWidth - 100}px`
     }
-    div = document.createElement('div')
-    div.style.position = 'fixed'
-    document.body.appendChild(div)
     b = document.createElement('h2')
-    div.appendChild(b)
+    document.body.appendChild(b)
     b.innerText = 'Scroll to Top ↟'
     b.addEventListener('mousedown', function(){
         b.style.borderStyle = 'inset'
@@ -29,6 +26,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         document.documentElement.scrollTop = 0
     })
     b.classList.add('scrollup')
+    b.classList.add('scroll')
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     scrolls = document.querySelectorAll('.scroll')
     scrollDomain = document.querySelector('#scrollDomain')
