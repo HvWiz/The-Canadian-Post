@@ -24,7 +24,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
         b.style.borderStyle = 'outset'
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
-        alert('hi')
     })
     b.classList.add('scrollup')
     document.body.scrollTop = document.documentElement.scrollTop = 0;
