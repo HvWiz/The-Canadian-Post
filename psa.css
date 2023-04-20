@@ -18,15 +18,11 @@
 .scrollup {
     text-align: center;
     color: #C40C0C;
-    border-style: solid;
     cursor: pointer;
-    border-width: 10px;
-    border-style: outset;
-    border-color: #9f9f9f;
-    width: 230px;
-    background-color: lightgrey;
+    width: 50px;
     position: relative;
-    left: 80%;
+    left: 93%;
+    box-shadow: 10px 5px 5px grey;
 }
 
 #scrollDomain {
