@@ -39,6 +39,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
         scroller.style.width = `${scrollPercent}%`
         scrolls[1].style.top = `${navBar.offsetHeight}px`
         scrolls[2].style.top = `${navBar.offsetHeight}px`
+        b.style.width = '230px'
+        b.style.top = '87%'
         if (window.pageYOffset > sticky) {
             for (s of scrolls) {
                 s.classList.add("sticky");
