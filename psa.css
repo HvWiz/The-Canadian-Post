@@ -17,6 +17,7 @@
     color: #C40C0C;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-style: solid;
+    cursor: pointer;
     border-width: 10px;
     border-style: outset;
     border-color: #9f9f9f;
