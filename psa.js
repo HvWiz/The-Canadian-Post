@@ -17,11 +17,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
     b = document.createElement('h2')
     document.body.appendChild(b);
     b.innerText = 'Scroll to Top'
-    b.addEventListener('click', function(){
+    b.addEventListener('mousedown', function(){
         b.style.borderStyle = 'inset'
-        setTimeout(() => {b.style.borderStyle = 'outset'}, 100)
+    })
+    b.addEventListener('mouseup' function() {
+        b.style.borderStyle = 'outset'
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
+        alert('hi')
     })
     b.classList.add('scrollup')
     document.body.scrollTop = document.documentElement.scrollTop = 0;
