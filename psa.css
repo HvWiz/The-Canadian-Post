@@ -69,7 +69,6 @@
 h3 {
     text-align: center;
     color: #36454F;
-    font-family: 'Lora', serif;
     font-style: italic;
     font-size: 30px;
 }
@@ -119,10 +118,11 @@ body {
 #articleTitle {
     padding: 50px;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     text-align: left;
     font-weight: bold;
     padding-bottom: 0;
+    padding-top: 20px;
 }
 
 #nav ul {
