@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", (event) => {
     img = document.querySelector('#img1')
-    vid = document.querySelector('#vid1')
+    vid = document.querySelector('video')
     observer = new IntersectionObserver(function(entries) {
         if(entries[0].isIntersecting === true)
             element = entries[0].target
