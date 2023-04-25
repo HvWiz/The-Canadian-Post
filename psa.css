@@ -39,8 +39,8 @@
     padding: 50px;
 }
 
-#vid1 {
-    padding: 50px;
+video {
+    text-align: center;
 }
 
 #scroller {
