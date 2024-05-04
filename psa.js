@@ -49,9 +49,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         if (window.innerWidth > 800) {
             scrollDomain.style.visibility = 'visible'
         }
-        if (document.documentElement.scrollTop == 0) {
-            scrollDomain.style.visibility = 'hidden'
-        }
+       
     })
     window.addEventListener('resize', () => {
         if (img != null) {
