@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         alert("Welcome! " + fname.value)
       });
       
-    
+      document.getElementsById("welcomeMessage").innerHTML = 'welcome' + fname.value
 
     sticky = nav.offsetTop;
     document.addEventListener('scroll', function() {
@@ -73,4 +73,5 @@ window.addEventListener("DOMContentLoaded", (event) => {
             vid.style.width = `${window.innerWidth - 100}px`
         }
     })
+
 })
