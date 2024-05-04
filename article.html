@@ -31,6 +31,9 @@
     <p class="article">
         Here you will find suitable careers that are protected from being taken over by AI. Respond to the following questions:
     </p>   
+    <label class="article" for="previous">Enter previous occuptation:</label>
+    <input type="text" id="previous" name="previous">
+    <br><br>
     <form class="article" id="careerCompass">
         <label for="industry">Choose an industry:</label>
         <select name="industry" id="industry">
@@ -41,15 +44,22 @@
         <br><br>
         <label for="income">Choose your desired income:</label>
         <select name="income" id="income">
-          <option value="30-50">$30,000 - $50,000</option>
-          <option value="50-100">$50,000 - $100,000</option>
-          <option value="100+">$100,000+</option>
+          <option value="30">$30,000 - $50,000</option>
+          <option value="50">$50,000 - $100,000</option>
+          <option value="100">$100,000+</option>
          </select>
          <br><br>
          <label for="experience">Work Experience?</label>
-         <select name="experience" id="experience">
-           <option value="experienceYes">Yes</option>
-           <option value="experienceNo">No</option>
+        <select name="experience" id="experience">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br><br>
+        <label for="Ward">Ward?</label>
+        <select name="Ward" id="ward">
+         <option value="1-3">1-3</option>
+         <option value="4-6">4-6</option>
+         <option value="7-10">7-10</option>
         </select>
         <br><br>
         <input type="button" value="Submit" onclick="f()">
@@ -58,16 +68,71 @@
                 let industry = document.getElementById("industry").value;
                 let income = document.getElementById("income").value;
                 let experience = document.getElementById("experience").value;
-                let newJob = "";
-                console.log(experience);
+                let ward = document.getElementById("Ward").value;
+                var opps = Math.floor(Math.random() * 30) + 30;
+
+                console.log(ward)
+                let newJob = opps + " ";
                 if (industry=="Healthcare") {
-                    newJob = "Doctor";
+                    if (experience=="No") {
+                        newJob += "Volunteer Healthcare Worker"
+                    }
+                    else {
+                        if (income=="30") {
+                            newJob += "None"
+                        }
+                        else if (income=="50") {
+                            newJob += "Nurse"
+                        }
+                        else {
+                            newJob += "Doctor"
+                        }
+
+                    }
                 }
+                else if (industry=="Education") {
+                    if (experience=="No") {
+                        newJob += "Volunteer Education Worker"
+                    }
+                    else {
+                        if (income=="30") {
+                            newJob += "None"
+                        }
+                        else if (income=="50") {
+                            newJob += "Teacher's Assistant"
+                        }
+                        else {
+                            newJob += "Teacher"
+                        }
+
+                    }   
+                }                
+                else if (industry =="Transportation") {
+                    if (experience=="No") {
+                        newJob += "Truck Driver"
+                    }
+                    else {
+                        if (income=="30") {
+                            newJob += "Operations Management"
+                        }
+                        else if (income=="50") {
+                            newJob += "Logistics Analyst"
+                        }
+                        else {
+                            newJob += "Transportation Supervisor"
+                        }
+
+                    }                
+                }
+                document.getElementById("myText").innerHTML = newJob;
+                //document.getElementById("ward").innerHTML = ward;
+
             }
+          
         </script>
     </form>
     <p class="article">
-        Your new job is: 
+        There are  <span id="myText"></span> positions in wards: <span id="ward"></span>
     </p>   
 
 
