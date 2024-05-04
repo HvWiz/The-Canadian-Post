@@ -32,13 +32,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
     loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
       
-        let fname = document.getElementById("fname");
+        var fname = document.getElementById("fname");
         let social = document.getElementById("social");
     
-
-        alert("Welcome! " + fname.value)
     });
-    
+      
+      document.getElementsById("welcomeMessage").innerHTML = 'welcome' + fname.value
+
     sticky = nav.offsetTop;
     document.addEventListener('scroll', function() {
         winScroll = document.body.scrollTop || document.documentElement.scrollTop;
