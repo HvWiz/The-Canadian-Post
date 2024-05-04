@@ -37,10 +37,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     
 
         alert("Welcome! " + fname.value)
-      });
-      
-      document.getElementsById("welcomeMessage").innerHTML = 'welcome' + fname.value
-
+    });
+    
     sticky = nav.offsetTop;
     document.addEventListener('scroll', function() {
         winScroll = document.body.scrollTop || document.documentElement.scrollTop;

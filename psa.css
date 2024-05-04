@@ -110,6 +110,9 @@ body {
     position: sticky;
 }
 
+#domain {
+    background-image: url("bg.jpg");
+}
 #articleTitle {
     padding: 50px;
     text-align: center;
