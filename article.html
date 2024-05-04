@@ -24,15 +24,14 @@
     </div>
     <div class="scroll" id="scrollbg"></div>
     <div class="scroll" id="scroller"></div>
-
-    <h1 id="welcomeMessage">Welcome</h1>
+    <h1 class="scroll" id="scrollDomain"></h1>
 
     <h1 id="articleTitle">Career Compass</h1>
     <h1 id="line">___________</h1>
     <p class="article">
         Here you will find suitable careers that are protected from being taken over by AI. Respond to the following questions:
     </p>   
-    <form class="article">
+    <form class="article" id="careerCompass">
         <label for="industry">Choose an industry:</label>
         <select name="industry" id="industry">
           <option value="Healthcare">Healthcare</option>
@@ -40,8 +39,38 @@
           <option value="Education">Education</option>
          </select>
         <br><br>
-        <input type="submit" value="Submit">
-      </form>
+        <label for="income">Choose your desired income:</label>
+        <select name="income" id="income">
+          <option value="30-50">$30,000 - $50,000</option>
+          <option value="50-100">$50,000 - $100,000</option>
+          <option value="100+">$100,000+</option>
+         </select>
+         <br><br>
+         <label for="experience">Work Experience?</label>
+         <select name="experience" id="experience">
+           <option value="experienceYes">Yes</option>
+           <option value="experienceNo">No</option>
+        </select>
+        <br><br>
+        <input type="button" value="Submit" onclick="f()">
+        <script>
+            function f() {
+                let industry = document.getElementById("industry").value;
+                let income = document.getElementById("income").value;
+                let experience = document.getElementById("experience").value;
+                let newJob = "";
+                console.log(experience);
+                if (industry=="Healthcare") {
+                    newJob = "Doctor";
+                }
+            }
+        </script>
+    </form>
+    <p class="article">
+        Your new job is: 
+    </p>   
+
+
 
     
       
