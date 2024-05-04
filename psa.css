@@ -15,6 +15,11 @@
     100% { opacity: 1; }
 }
 
+#searchBox {
+    padding: 12px 12px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+}
 .scrollup {
     text-align: center;
     color: #253439;
@@ -27,7 +32,13 @@
 
 #scrollDomain {
     text-align: left;
+<<<<<<< HEAD
     
+=======
+    align-items: center;
+    vertical-align: center;
+
+>>>>>>> 825174ffebf223084d985c42ec2a5cf1951f2d7f
 }
 
 #img1 {
@@ -44,6 +55,7 @@ video {
     width: 0%;
     height: 10px;
     bottom: 10px;
+    position: relative;
     position: sticky;
 }
 
@@ -119,17 +131,19 @@ body {
     margin: 0;
     list-style-type: none;
     text-decoration: none;
-    font-size: 0px;
+    font-size: 10px;
 }
 
 #nav ul li{
-    text-align: center;
+    text-align: right;
     font-size: 20px;
 }
 
 #nav ul li a {
     color: white;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #nav ul li a:hover {
@@ -140,10 +154,11 @@ body {
     #nav ul li{
         display: inline-flex;
         border-bottom: 0px;
-        padding-right: 20px;
-        text-align: center;
+        padding-right: 0px;
+        text-align: right;
         padding: 5px;
-        font-size: 1.5rem;
+        font-size: 20px;
+        
     }
     #scrollDomain {
         text-align: left;
