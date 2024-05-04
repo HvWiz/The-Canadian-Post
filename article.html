@@ -82,11 +82,11 @@
                 let industry = document.getElementById("industry").value;
                 let income = document.getElementById("income").value;
                 let experience = document.getElementById("experience").value;
-                let ward = document.getElementById("Ward").value;
-                var opps = Math.floor(Math.random() * 30) + 30;
+                //let ward = document.getElementById("Ward").value;
+                var per = Math.floor(Math.random() * 101);
 
                 console.log(ward)
-                let newJob = opps + " ";
+                let newJob = " ";
                 if (industry=="Healthcare") {
                     if (experience=="No") {
                         newJob += "Volunteer Healthcare Worker"
@@ -139,14 +139,15 @@
                     }                
                 }
                 document.getElementById("myText").innerHTML = newJob;
-                //document.getElementById("ward").innerHTML = ward;
+                document.getElementById("per").innerHTML = per;
 
             }
           
         </script>
     </form>
     <p class="article">
-        There are  <span id="myText"></span> positions in wards: <span id="ward"></span>
-    </p>
+        There is a <span id="per"></span>% chance that your job can be done by AI. 
+        There are  <span id="myText"></span> positions in wards: <span id="per"></span>
+    </p>   
 
 </html>
