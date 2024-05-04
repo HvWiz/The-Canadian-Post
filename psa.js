@@ -28,15 +28,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
     scrollDomain = document.querySelector('#scrollDomain')
     navBar = document.querySelector('#nav')
 
-    const submitbutton = document.getElementById('#submit') 
- 
-    // Add an event listener for the "click" event 
-    submitbutton.addEventListener('click', function() { 
-        console.log("Button pressed")
-    })
+    let loginForm = document.getElementById("loginForm");
+    loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+      
+        let fname = document.getElementById("fname");
+        let social = document.getElementById("social");
+    
 
-    x = document.querySelector('#fname')
-    console.log(x)
+        alert("Welcome! " + fname.value)
+      });
+      
+    
+
     sticky = nav.offsetTop;
     document.addEventListener('scroll', function() {
         winScroll = document.body.scrollTop || document.documentElement.scrollTop;
