@@ -27,6 +27,20 @@ window.addEventListener("DOMContentLoaded", (event) => {
     scrolls = document.querySelectorAll('.scroll')
     scrollDomain = document.querySelector('#scrollDomain')
     navBar = document.querySelector('#nav')
+
+    let loginForm = document.getElementById("loginForm");
+    loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+      
+        let fname = document.getElementById("fname");
+        let social = document.getElementById("social");
+    
+
+        alert("Welcome! " + fname.value)
+      });
+      
+    
+
     sticky = nav.offsetTop;
     document.addEventListener('scroll', function() {
         winScroll = document.body.scrollTop || document.documentElement.scrollTop;
