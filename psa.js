@@ -37,7 +37,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
     
     });
       
-      document.getElementsById("welcomeMessage").innerHTML = 'welcome' + fname.value
+
+    const button = document.querySelector('.careerSubmit') 
+    button.addEventListener('click', e => { 
+        console.log('I have been clicked') 
+    }) 
+
+    document.getElementsById("welcomeMessage").innerHTML = 'welcome' + fname.value
+
+
+
 
     sticky = nav.offsetTop;
     document.addEventListener('scroll', function() {
