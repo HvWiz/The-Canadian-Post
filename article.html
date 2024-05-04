@@ -105,6 +105,7 @@
                 var per = Math.floor(Math.random() * 50); + 50
                 var newPer = Math.floor(Math.random() * 30);
                 var opps = Math.floor(Math.random() * 30) + 30
+                var salary = Math.floor(Math.random() * 40) + 60
 
                 console.log(ward)
                 let newJob = " ";
@@ -162,6 +163,7 @@
                 document.getElementById("newJob").innerHTML = newJob;
                 document.getElementById("per").innerHTML = per;
                 document.getElementById("opps").innerHTML = opps;
+                document.getElementById("salary").innerHTML = salary;
                 document.getElementById("newPer").innerHTML = newPer;
                 document.getElementById("ward").innerHTML = ward;
 
@@ -175,6 +177,7 @@
         <strong> <span id ="newJob"></span> </strong> <br>
         There are  <span id="opps"></span>  positions in wards: <span id="ward"></span> <br>
         <span id="newPer"></span>% chance that this job cannot be done by AI
+        Potential Salary: $<span id="salary"></span>
     </p>   
 
 </html>
