@@ -68,8 +68,8 @@
             <option value="No">No</option>
         </select>
         <br><br>
-        <label for="Ward">Ward?</label>
-        <select name="Ward" id="ward">
+        <label for="ward">Ward?</label>
+        <select name="ward" id="ward">
          <option value="1-3">1-3</option>
          <option value="4-6">4-6</option>
          <option value="7-10">7-10</option>
@@ -94,8 +94,10 @@
                 let industry = document.getElementById("industry").value;
                 let income = document.getElementById("income").value;
                 let experience = document.getElementById("experience").value;
-                //let ward = document.getElementById("Ward").value;
-                var per = Math.floor(Math.random() * 101);
+                let ward = document.getElementById("ward").value;
+                var per = Math.floor(Math.random() * 50); + 50
+                var newPer = Math.floor(Math.random() * 30);
+                var opps = Math.floor(Math.random() * 30) + 30
 
                 console.log(ward)
                 let newJob = " ";
@@ -150,16 +152,22 @@
 
                     }                
                 }
-                document.getElementById("myText").innerHTML = newJob;
+                document.getElementById("newJob").innerHTML = newJob;
                 document.getElementById("per").innerHTML = per;
+                document.getElementById("opps").innerHTML = opps;
+                document.getElementById("newPer").innerHTML = newPer;
+                document.getElementById("ward").innerHTML = ward;
 
             }
           
         </script>
     </form>
     <p class="article">
-        There is a <span id="per"></span>% chance that your job can be done by AI. 
-        There are  <span id="myText"></span> positions in wards: <span id="per"></span>
+        There is a <span id="per"></span>% chance that your job can be done by AI. <br>
+        Suggested Positions: <br>
+        <strong> <span id ="newJob"></span> </strong> <br>
+        There are  <span id="opps"></span>  positions in wards: <span id="ward"></span> <br>
+        <span id="newPer"></span>% chance that this job cannot be done by AI
     </p>   
 
 </html>
