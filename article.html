@@ -72,14 +72,6 @@
             <option value="No">No</option>
         </select>
         <br><br>
-        <label for="ward">Ward?</label>
-        <select name="ward" id="ward">
-         <option value="select">Select</option>
-         <option value="1-3">1-3</option>
-         <option value="4-6">4-6</option>
-         <option value="7-10">7-10</option>
-        </select>
-        <br><br>
         <label for="skills">What are some of your skills?</label>
         <input name="skills" type="text">
         <br><br>
@@ -95,13 +87,6 @@
             <option value="NA">No Post Secondary</option>
            </select>
         <br><br>
-        <label for="empty"></label>
-        <select name="empty" id="not">
-         <!-- <option value="1-3">1-3</option>
-         <option value="4-6">4-6</option>
-         <option value="7-10">7-10</option> -->
-        </select>
-        <br><br>
 
         <input type="button" value="Submit" onclick="f()">
         <script>
@@ -109,13 +94,11 @@
                 let industry = document.getElementById("industry").value;
                 let income = document.getElementById("income").value;
                 let experience = document.getElementById("experience").value;
-                let ward = document.getElementById("ward").value;
                 var per = Math.floor(Math.random() * 50) + 50;
                 var newPer = Math.floor(Math.random() * 30) + 70;
                 var opps = Math.floor(Math.random() * 30) + 30
                 var salary = Math.floor(Math.random() * 40000) + 60000
 
-                console.log(ward)
                 let newJob = " ";
                 if (industry=="Healthcare") {
                     if (experience=="No") {
@@ -173,7 +156,6 @@
                 document.getElementById("opps").innerHTML = opps;
                 document.getElementById("salary").innerHTML = salary;
                 document.getElementById("newPer").innerHTML = newPer;
-                document.getElementById("ward").innerHTML = ward;
 
             }
           
@@ -183,9 +165,9 @@
         There is a <span id="per"></span>% chance that your job can be done by AI. <br>
         Suggested Positions: <br>
         <strong> <span id ="newJob"></span> </strong> <br>
-        There are  <span id="opps"></span>  positions in wards: <span id="ward"></span> <br>
-        <span id="newPer"></span>% chance that this job cannot be done by AI <br>
-        Potential Salary: $<span id="salary"></span> per year
+        There are  <span id="opps"></span>  positions available<br>
+        <span id="newPer"></span>% chance that this job cannot be done by AI. <br>
+        Potential Salary: $<span id="salary"></span>
     </p>   
 
 </html>
