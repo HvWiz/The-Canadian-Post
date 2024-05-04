@@ -27,6 +27,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
     scrolls = document.querySelectorAll('.scroll')
     scrollDomain = document.querySelector('#scrollDomain')
     navBar = document.querySelector('#nav')
+
+    const submitbutton = document.getElementById('#submit') 
+ 
+    // Add an event listener for the "click" event 
+    submitbutton.addEventListener('click', function() { 
+        console.log("Button pressed")
+    })
+
+    x = document.querySelector('#fname')
+    console.log(x)
     sticky = nav.offsetTop;
     document.addEventListener('scroll', function() {
         winScroll = document.body.scrollTop || document.documentElement.scrollTop;
